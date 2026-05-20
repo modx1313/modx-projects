@@ -1,0 +1,792 @@
+.homepage .catalog-filters {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-bottom: clamp(1rem, 3.36vw, 3rem);
+}
+
+.homepage .catalog-filters__open-btn,
+.homepage .catalog-filters__mobile-header,
+.homepage .catalog-filters__mobile-actions,
+.homepage .catalog-filters__backdrop {
+  display: none;
+}
+
+.homepage .catalog-filters .filter-section {
+  display: block;
+  border-radius: 2rem;
+  background: #f0faff;
+  padding: 2rem 2rem 1.8rem;
+}
+
+.homepage .catalog-filters .filter-section .catalog-filters__items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.homepage .catalog-filters .filter-section .item {
+  min-height: 5.4rem;
+  width: auto;
+  flex: 1 1 auto;
+}
+
+.homepage .catalog-filters .filter-section .item .wrapper {
+  position: static;
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.homepage .catalog-filters .filter-section .item[data-filter-name="price"] {
+  width: 22.8rem;
+  flex: 0 0 22.8rem;
+}
+
+.homepage .catalog-filters .filter-section .item[data-filter-name="duration"] {
+  width: 25rem;
+  flex: 0 0 25rem;
+}
+
+.homepage .catalog-filters .filter-section .item[data-filter-name="interval"] {
+  width: 31.5rem;
+  flex: 0 0 31.5rem;
+}
+
+.homepage .catalog-filters .filter-section .item[data-filter-name="ships"] {
+  width: 22rem;
+  flex: 0 0 22rem;
+}
+
+.homepage .catalog-filters .filter-section .item .title {
+  padding: 0;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  line-height: 1.15;
+  font-weight: 500;
+  color: #031119;
+  pointer-events: none;
+}
+
+.homepage .catalog-filters .filter-section .item .title .icon {
+  display: none !important;
+}
+
+.homepage .catalog-filters .filter-section .item .title .text {
+  font-size: 1.2rem;
+  line-height: 1.15;
+}
+
+.homepage .catalog-filters .filter-section .item .values-section,
+.homepage .catalog-filters .filter-section .item .price-section {
+  display: block;
+}
+
+.homepage .catalog-filters .filter-section .item .values-section {
+  max-height: none;
+  overflow: visible;
+  padding: 0;
+}
+
+.homepage .catalog-filters .filter-section .item[data-filter-name="duration"] .values-section .simplebar-content,
+.homepage .catalog-filters .filter-section .item[data-filter-name="interval"] .values-section .simplebar-content {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.4rem;
+}
+
+.homepage .catalog-filters .filter-section .item .values-section .simplebar-wrapper,
+.homepage .catalog-filters .filter-section .item .values-section .simplebar-mask,
+.homepage .catalog-filters .filter-section .item .values-section .simplebar-offset,
+.homepage .catalog-filters .filter-section .item .values-section .simplebar-content-wrapper,
+.homepage .catalog-filters .filter-section .item .values-section .simplebar-content {
+  overflow: visible !important;
+  height: auto !important;
+  max-height: none !important;
+}
+
+.homepage .catalog-filters .filter-section .item .values-section .simplebar-track {
+  display: none !important;
+}
+
+.homepage .catalog-filters .filter-section .item .row {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border: 0.1rem solid rgba(3, 17, 25, 0.1);
+  border-radius: 10rem;
+  background: #fff;
+  padding: 0.8rem 1.2rem;
+  line-height: 1.15;
+  color: #031119;
+  font-size: 1.2rem;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.homepage .catalog-filters .filter-section .item .row:hover {
+  border-color: #009ec7;
+  color: #009ec7;
+}
+
+.homepage .catalog-filters .filter-section .item .row.active {
+  color: #009ec7;
+  border-color: #009ec7;
+}
+
+.homepage .catalog-filters .filter-section .price-section,
+.homepage .catalog-filters .filter-section .no-options-section {
+  background: transparent;
+  padding: 0;
+}
+
+.homepage .catalog-filters .filter-section .price-section .catalog-filters__group-label {
+  display: none;
+}
+
+.homepage .catalog-filters .filter-section .no-options-section {
+  display: none !important;
+}
+
+.homepage .catalog-filters .filter-section .price-section .price-input {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  gap: 0.8rem;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.homepage .catalog-filters .filter-section .price-section .price-input .field {
+  width: 10rem;
+  flex: 0 0 10rem;
+  position: relative;
+  min-width: 0;
+}
+
+.homepage .catalog-filters .filter-section .price-section .price-input .price-separator {
+  width: 1.2rem;
+  height: 0.2rem;
+  border-radius: 0.1rem;
+  background: #009ec7;
+  flex: 0 0 1.2rem;
+  margin-bottom: calc(0.8rem + (2rem) / 2 - 0.1rem);
+}
+
+.homepage .catalog-filters .filter-section .price-section .price-input .field .text {
+  font-size: 1.2rem;
+  line-height: 1.15;
+  font-weight: 500;
+}
+
+.homepage .catalog-filters .filter-section .price-section .price-input .field .ruble {
+  position: absolute;
+  right: 0.8rem;
+  bottom: 0.9rem;
+  color: #031119;
+  font-size: 1.4rem;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.homepage .catalog-filters .filter-section .price-section .field input {
+  width: 100%;
+  margin-top: 0.8rem;
+  border: 0.1rem solid rgba(3, 17, 25, 0.1);
+  border-radius: 0.8rem;
+  padding: 0.8rem 2.4rem 0.8rem 0.8rem;
+  font-size: 1.4rem;
+  line-height: 1.15;
+  color: #03111999;
+  outline: none;
+  appearance: textfield;
+  -moz-appearance: textfield;
+  background: #fff;
+}
+
+.homepage .catalog-filters .filter-section .price-section .field input::placeholder {
+  color: #03111999;
+  opacity: 1;
+}
+
+.homepage .catalog-filters .filter-section .price-section .field input::-webkit-input-placeholder {
+  color: #03111999;
+}
+
+.homepage .catalog-filters .filter-section .price-section .field input::-moz-placeholder {
+  color: #03111999;
+  opacity: 1;
+}
+
+.homepage .catalog-filters .filter-section .price-section .field input:focus {
+  color: #031119;
+}
+
+.homepage .catalog-filters .filter-section .price-section input[type="number"]::-webkit-outer-spin-button,
+.homepage .catalog-filters .filter-section .price-section input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.homepage .catalog-filters .filter-section .price-section .slider {
+  display: none;
+}
+
+.homepage .catalog-filters .filter-section .price-section .slider .progress {
+  display: none;
+}
+
+.homepage .catalog-filters .filter-section .price-section .range-input {
+  display: none;
+}
+
+.homepage .catalog-filters .filter-section .price-section .range-input input {
+  position: absolute;
+  top: -0.7rem;
+  width: 100%;
+  height: 0.2rem;
+  pointer-events: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none;
+}
+
+.homepage .catalog-filters .filter-section .price-section input[type="range"]::-webkit-slider-thumb {
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  background: #009ec7;
+  cursor: pointer;
+  pointer-events: auto;
+  -webkit-appearance: none;
+}
+
+.homepage .catalog-filters .filter-section .price-section input[type="range"]::-moz-range-thumb {
+  width: 1.4rem;
+  height: 1.4rem;
+  border: none;
+  border-radius: 50%;
+  background: #009ec7;
+  cursor: pointer;
+  pointer-events: auto;
+  -moz-appearance: none;
+}
+
+.homepage .catalog-filters .filter-section .price-section .base-button {
+  display: none;
+}
+
+.homepage .catalog-filters .swiper-scrollbar {
+  display: none;
+}
+
+.homepage .catalog-filters .filter-section .item[data-filter-name="ships"] .values-section {
+  display: none;
+  position: absolute;
+  top: 8.2rem;
+  width: 22rem;
+  z-index: 6;
+  background: #fff;
+  border: 0.1rem solid rgba(3, 17, 25, 0.1);
+  border-radius: 0.8rem;
+  padding: 0.4rem;
+  max-height: 17rem;
+  overflow-y: auto;
+}
+
+.homepage .catalog-filters .filter-section .item[data-filter-name="ships"].opened .values-section {
+  display: block;
+}
+
+.homepage .catalog-filters .filter-section .item[data-filter-name="ships"] .title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.8rem;
+  pointer-events: auto;
+}
+
+.homepage .catalog-filters .filter-section .item[data-filter-name="ships"] .catalog-filters__field-label {
+  font-size: 1.2rem;
+  line-height: 1.15;
+  font-weight: 500;
+  color: #031119;
+}
+
+.homepage .catalog-filters .filter-section .item[data-filter-name="ships"] .title .text {
+  display: block;
+  flex: 1 1 auto;
+  min-width: 0;
+  width: 100%;
+  border: 0.1rem solid rgba(3, 17, 25, 0.1);
+  border-radius: 0.8rem;
+  background: #fff;
+  color: rgba(3, 17, 25, 0.6);
+  padding: 0.8rem;
+  font-size: 1.4rem;
+  line-height: 1.15;
+  padding-right: 2.8rem;
+  font-weight: 400;
+}
+
+.homepage .catalog-filters .filter-section .item[data-filter-name="ships"] .title .icon.expand {
+  display: inline-block !important;
+  width: 1.2rem;
+  height: 1.2rem;
+  opacity: 1;
+  object-fit: contain;
+  position: absolute;
+  right: 0.8rem;
+  bottom: 1rem;
+  top: auto;
+  transform: none;
+  content: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.25 4.125L6 7.875L9.75 4.125' stroke='%23031119' stroke-opacity='0.6' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.homepage .catalog-filters .filter-section .item[data-filter-name="ships"].opened .title .icon.expand {
+  display: none !important;
+}
+
+.homepage .catalog-filters .filter-section .item[data-filter-name="ships"].opened .title .icon.collapse {
+  display: inline-block !important;
+  width: 1.2rem;
+  height: 1.2rem;
+  opacity: 1;
+  object-fit: contain;
+  position: absolute;
+  right: 0.8rem;
+  bottom: 1rem;
+  top: auto;
+  transform: none;
+  content: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.25 7.875L6 4.125L9.75 7.875' stroke='%23031119' stroke-opacity='0.6' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.homepage .catalog-filters .filter-section .item[data-filter-name="ships"] .values-section .row {
+  display: block;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 0.8rem;
+}
+
+.homepage .catalog-filters .filter-section .item[data-filter-name="ships"] .values-section .row:hover {
+  color: #009ec7;
+  background: rgba(0, 158, 199, 0.08);
+}
+
+@media (max-width: 1190px) {
+  .homepage .catalog-filters .filter-section .catalog-filters__items {
+    gap: 2rem;
+  }
+
+  .homepage .catalog-filters .filter-section .item[data-filter-name="price"] {
+    flex-basis: 22rem;
+  }
+
+  .homepage .catalog-filters .filter-section .item[data-filter-name="duration"] {
+    flex-basis: 20rem;
+  }
+
+  .homepage .catalog-filters .filter-section .item[data-filter-name="interval"] {
+    flex-basis: 24rem;
+  }
+
+  .homepage .catalog-filters .filter-section .item[data-filter-name="ships"] {
+    flex-basis: 18rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage .catalog-filters {
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .homepage .catalog-filters .filter-swiper-container {
+    margin-bottom: 0;
+  }
+
+  .homepage .catalog-filters__open-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    min-height: 3.4rem;
+    border: 0;
+    border-radius: 4rem;
+    padding: 0.8rem 1.4rem 1rem;
+    font-size: 1.4rem;
+    color: rgba(3, 17, 25, 0.7);
+    background: #f0faff;
+    cursor: pointer;
+  }
+
+  .homepage .catalog-filters__filter-icon {
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    flex-shrink: 0;
+  }
+
+  .homepage .catalog-filters__mobile-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.4rem;
+    line-height: 1.15;
+    color: rgba(3, 17, 25, 0.7);
+  }
+
+  .homepage .catalog-filters__drawer {
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .homepage .catalog-filters__drawer.is-open {
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  .homepage .catalog-filters__backdrop {
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 17, 25, 0.6);
+  }
+
+  .homepage .catalog-filters__panel {
+    position: relative;
+    width: 37.8rem;
+    max-width: calc(100vw - 2rem);
+    height: 100%;
+    overflow-y: auto;
+    background: #f0faff;
+    padding: 1.8rem 2.8rem 2.4rem;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+  }
+
+  .homepage .catalog-filters__drawer.is-open .catalog-filters__panel {
+    transform: translateX(0);
+  }
+
+  .homepage .catalog-filters__mobile-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2.4rem;
+    padding-right: 2.8rem;
+  }
+
+  .homepage .catalog-filters__close-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1.8rem;
+    right: 2.8rem;
+    z-index: 2;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    opacity: 0.4;
+    cursor: pointer;
+  }
+
+  .homepage .catalog-filters__close-btn img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  /* Overlay shell only; filters inside drawer = desktop layout, vertical stack (Figma 768) */
+  .homepage .catalog-filters__drawer .filter-section {
+    display: block;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .catalog-filters__items {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.8rem;
+    transform: none !important;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .item,
+  .homepage .catalog-filters__drawer .filter-section .item[data-filter-name="price"],
+  .homepage .catalog-filters__drawer .filter-section .item[data-filter-name="duration"],
+  .homepage .catalog-filters__drawer .filter-section .item[data-filter-name="interval"],
+  .homepage .catalog-filters__drawer .filter-section .item[data-filter-name="ships"] {
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    flex: 0 0 auto;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .item .wrapper {
+    position: static;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .item .price-section,
+  .homepage .catalog-filters__drawer .filter-section .item .values-section {
+    width: 100%;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .js-filter-values[data-simplebar],
+  .homepage .catalog-filters__drawer .filter-section .js-filter-values .simplebar-wrapper,
+  .homepage .catalog-filters__drawer .filter-section .js-filter-values .simplebar-mask,
+  .homepage .catalog-filters__drawer .filter-section .js-filter-values .simplebar-offset,
+  .homepage .catalog-filters__drawer .filter-section .js-filter-values .simplebar-content-wrapper,
+  .homepage .catalog-filters__drawer .filter-section .js-filter-values .simplebar-content,
+  .homepage .catalog-filters__drawer .filter-section .js-filter-values .simplebar-placeholder {
+    position: static;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .js-filter-values .simplebar-placeholder,
+  .homepage .catalog-filters__drawer .filter-section .js-filter-values .simplebar-track {
+    display: none !important;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .item .title {
+    padding: 0;
+    margin-bottom: 0.8rem;
+    min-height: 0;
+    pointer-events: none;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .item .title .text {
+    font-size: 1.2rem;
+    line-height: 1.15;
+    opacity: 1;
+    color: #031119;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .item .title .icon {
+    display: none !important;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .item .values-section {
+    display: block;
+    max-height: none;
+    overflow: visible;
+    padding: 0;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .item .row {
+    display: inline-flex;
+    margin: 0;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.4rem;
+    line-height: 1.15;
+    border: 0.1rem solid rgba(3, 17, 25, 0.1);
+    border-radius: 10rem;
+    background: #fff;
+    justify-content: center;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .item[data-filter-name="duration"] .values-section .simplebar-content,
+  .homepage .catalog-filters__drawer .filter-section .item[data-filter-name="interval"] .values-section .simplebar-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    width: 100%;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .item[data-filter-name="ships"] .catalog-filters__field-label {
+    width: 100%;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .price-section {
+    padding: 0;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .price-section .catalog-filters__group-label {
+    display: none;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .price-section .price-input {
+    width: 100%;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .price-section .price-input .field {
+    flex: 1 1 0;
+    width: auto;
+    max-width: none;
+    min-width: 0;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .price-section .field input {
+    width: 100%;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .price-section .price-input .price-separator {
+    display: block;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .price-section .base-button {
+    display: none;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .item[data-filter-name="ships"] {
+    position: relative;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .item[data-filter-name="ships"] .title {
+    pointer-events: auto;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .item[data-filter-name="ships"] .title .text {
+    display: block;
+    width: 100%;
+    border: 0.1rem solid rgba(3, 17, 25, 0.1);
+    border-radius: 0.8rem;
+    background: #fff;
+    color: rgba(3, 17, 25, 0.6);
+    padding: 0.8rem;
+    font-size: 1.4rem;
+    line-height: 1.15;
+    padding-right: 2.8rem;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .item[data-filter-name="ships"] .title .icon.expand {
+    display: inline-block !important;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .item[data-filter-name="ships"].opened .title .icon.expand {
+    display: none !important;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .item[data-filter-name="ships"].opened .title .icon.collapse {
+    display: inline-block !important;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .item[data-filter-name="ships"] .values-section {
+    display: none;
+    position: absolute;
+    top: 6.2rem;
+    left: 0;
+    width: 100%;
+    z-index: 6;
+    background: #fff;
+    border: 0.1rem solid rgba(3, 17, 25, 0.1);
+    border-radius: 0.8rem;
+    padding: 0.4rem;
+    max-height: 17rem;
+    overflow-y: auto;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .item[data-filter-name="ships"].opened .values-section {
+    display: block;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .item[data-filter-name="ships"] .values-section .row {
+    display: block;
+    border: 0;
+    border-radius: 0;
+    padding: 0.8rem;
+    font-size: 1.4rem;
+  }
+
+  .homepage .catalog-filters__mobile-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+    margin-top: 2.4rem;
+  }
+
+  .homepage .catalog-filters__mobile-actions .base-button {
+    width: 100%;
+    min-height: 4rem;
+    margin: 0;
+    border-radius: 9rem;
+    font-size: 1.4rem;
+    padding: 1.2rem 2.4rem;
+  }
+
+  .homepage .catalog-filters__mobile-actions .base-button.filled {
+    font-weight: 600;
+  }
+
+  .homepage .catalog-filters__mobile-actions .base-button:not(.filled) {
+    border: 0.1rem solid rgba(3, 17, 25, 0.1);
+    background: transparent;
+    color: #031119;
+    font-weight: 600;
+  }
+
+  .homepage .catalog-filters .swiper-scrollbar {
+    display: none;
+  }
+
+  body.catalog-filters-open {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 360px) {
+  /* Figma 360 — Фильтры: full-width overlay, padding 16px, content 328px */
+  .homepage .catalog-filters__backdrop {
+    display: none;
+  }
+
+  .homepage .catalog-filters__panel {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    padding: 1.8rem 1.6rem 2.4rem;
+    box-sizing: border-box;
+  }
+
+  .homepage .catalog-filters__close-btn {
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    z-index: 2;
+    width: 2rem;
+    height: 2rem;
+    opacity: 0.4;
+  }
+
+  .homepage .catalog-filters__close-btn img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .homepage .catalog-filters__mobile-header {
+    justify-content: flex-start;
+    margin-bottom: 2.2rem;
+    padding-right: 2.8rem;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .catalog-filters__items {
+    gap: 1.8rem;
+  }
+
+  .homepage .catalog-filters__drawer .filter-section .item[data-filter-name="interval"] .values-section .simplebar-content {
+    row-gap: 0.4rem;
+  }
+
+  .homepage .catalog-filters__mobile-actions {
+    margin-top: 2.4rem;
+  }
+}

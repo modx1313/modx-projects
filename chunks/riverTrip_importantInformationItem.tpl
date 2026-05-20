@@ -1,0 +1,3 @@
+<div class="item">
+    [[+text]]
+</div>

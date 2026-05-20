@@ -1,0 +1,1 @@
+return var_dump($input);
