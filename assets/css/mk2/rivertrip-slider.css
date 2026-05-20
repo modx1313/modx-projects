@@ -1,0 +1,218 @@
+.rivertrip-slider {
+    width: 100%;
+    height: 390px;
+    margin-top: 32px;
+    position: relative;
+    overflow: hidden
+}
+
+
+.rivertrip-slide {
+    overflow: hidden;
+    border-radius: 20px;
+    height: 100%;
+    position: relative;
+
+}
+.rivertrip-slide__image {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.rivertrip-slide__gradient {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4) 100%;
+}
+
+
+.rivertrip-slide__content {
+    z-index: 3;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 20px 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .rivertrip-slide__content h2{
+        color: white;
+        font-weight: 600;
+        font-size: 2.5rem;  
+        line-height: 2.875rem; 
+        letter-spacing: 0;
+    }
+
+    .rivertrip-slide__image  img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 20px;
+    }
+
+.rivertrip-slide__bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.rivertrip-slide__tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.rivertrip-slide__date-tab,
+.rivertrip-slide__duration-tab {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: end;
+    font-size: 16px;
+    padding: 9px 20px;
+    background-color: rgba(35, 119, 163, 1);
+    border-radius: 90px;
+}
+
+.rivertrip-slide__date-tab img,
+.rivertrip-slide__duration-tab img{
+    width: 19px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.rivertrip-slide__price-block {
+    display: flex;
+    gap: 10px;
+}
+
+.rivertrip-slide__price {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.rivertrip-slide__old-price {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: line-through;
+    margin: auto 0;
+}
+
+.rivertrip-slide__discount {
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 7px;
+    margin: auto 0;
+    border-radius: 90px;
+    background-color: rgba(253, 56, 56, 1);
+}
+
+.rivertrip-slider .swiper-pagination {
+    display: none;
+}
+
+.rivertrip-slider .swiper-pagination-bullet-active {
+    background-color: rgba(35, 119, 163, 1);
+}
+
+
+@media (max-width: 850px) {
+
+.rivertrip-slide__content {
+    justify-content: flex-start;
+}
+
+.rivertrip-slide__bottom {
+    height: 100%;
+    flex-direction: column;
+    align-content: space-between;
+    margin-top: 10px;
+}
+
+.rivertrip-slider .slider-button-prev, 
+.rivertrip-slider .slider-button-next {
+    display: none;
+}
+
+.rivertrip-slider .swiper-pagination {
+    display: block;
+}
+
+.rivertrip-slider {
+    padding-bottom: 40px;
+}
+
+}
+
+
+@media (max-width: 780px) {
+
+    .rivertrip-slide__content {
+        padding: 10px 15px;
+    }
+
+    .rivertrip-slide__price {
+        font-size: 40px;
+    }
+
+    .rivertrip-slide__old-price {
+        font-size: 18px;
+    }
+
+    .rivertrip-slide__discount {
+        font-size: 11px;
+    }
+
+    .rivertrip-slide__date-tab,
+    .rivertrip-slide__duration-tab {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+
+    .rivertrip-slide__date-tab img,
+    .rivertrip-slide__duration-tab img{
+       width: 9px;
+    }
+
+    .rivertrip-slider {
+        height: 195px;
+    }
+}
+
+@media (max-width: 380px) {
+    .rivertrip-slide__price {
+        font-size: 35px;
+    }
+
+    .rivertrip-slide__old-price {
+        font-size: 16px;
+    }
+
+    .rivertrip-slide__discount {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .rivertrip-slide__price {
+        font-size: 32px;
+    }
+
+    .rivertrip-slide__old-price {
+        font-size: 16px;
+    }
+
+    .rivertrip-slide__discount {
+        font-size: 10px;
+    }
+}
