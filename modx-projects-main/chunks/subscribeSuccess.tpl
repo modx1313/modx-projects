@@ -1,0 +1,1 @@
+<div class="subscribe-success">Вы успешно подписаны!</div>
