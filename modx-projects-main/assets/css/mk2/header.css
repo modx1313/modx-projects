@@ -1,0 +1,100 @@
+/* ANCHOR header */
+
+
+.header-main-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 113px;
+}
+
+.header-main-bar .mobile-menu-btn {
+    display: none;
+}
+
+.header-logo {
+    width: 75px;
+    height: 75px;
+}
+
+.header-location,
+.header-email-section .email,
+.header-phone-section .phone,
+.header-social-section {
+    display: flex;
+    align-items: center;
+}
+
+.header-location {
+    display: none;
+}
+
+.header-location .location-icon {
+    width: 19px;
+    height: 19px;
+}
+
+.header-location .text {
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 4px;
+}
+
+.header-location .change-icon {
+    width: 12px;
+    height: 12px;
+    margin-top: 1px;
+}
+
+.header-email-section .icon {
+    width: 13px;
+    height: 13px;
+}
+
+.header-email-section .text {
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.header-email-section .compose-email {
+    font-size: 11px;
+    margin-top: 5px;
+    text-align: center;
+    color: #0093B9;
+    text-decoration: underline;
+}
+
+.header-phone-section .icon {
+    width: 12px;
+    height: 12px;
+}
+
+.header-phone-section .number {
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.header-phone-section .work-schedule {
+    color: #797979;
+    font-size: 11px; 
+    margin-top: 5px;
+    text-align: center;
+}
+
+.header-phone-mobile-icon {
+    display: none;
+    height: 21px;
+    width: 21px;
+}
+
+.header-phone-mobile-icon .icon {
+    width: 100%;
+    height: 100%;
+}
+
+.header-social-section {
+    gap: 11px;
+}
