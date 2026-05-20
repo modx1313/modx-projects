@@ -1,10 +1,11 @@
 .homepage .catalog-filters {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 2.4rem;
+  margin-bottom: 2rem;
   margin-bottom: clamp(1rem, 3.36vw, 3rem);
 }
 
 .homepage .catalog-filters__open-btn,
+.homepage .catalog-filters__close-btn,
 .homepage .catalog-filters__mobile-header,
 .homepage .catalog-filters__mobile-actions,
 .homepage .catalog-filters__backdrop {
@@ -399,9 +400,23 @@
 }
 
 @media (max-width: 768px) {
+  .homepage .catalog-filters-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
+  }
+
+  .homepage .catalog-filters-head__title {
+    margin: 0;
+    text-align: left;
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
   .homepage .catalog-filters {
-    margin-top: 2.4rem;
-    margin-bottom: 2.4rem;
+    width: auto;
+    flex: 0 0 auto;
   }
 
   .homepage .catalog-filters .filter-swiper-container {
@@ -413,6 +428,8 @@
     align-items: center;
     justify-content: center;
     gap: 0.6rem;
+    flex-shrink: 0;
+    white-space: nowrap;
     min-height: 3.4rem;
     border: 0;
     border-radius: 4rem;

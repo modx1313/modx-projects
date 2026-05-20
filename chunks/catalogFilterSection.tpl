@@ -1,7 +1,7 @@
 {var $pageId = 'id' | resource}
 {var $isExcPage = $pageId == 571}
 
-<div class="base-width catalog-filters">
+<div class="catalog-filters">
     <button class="catalog-filters__open-btn js-catalog-filters-open" type="button">
         <span>Фильтры</span>
         <img class="catalog-filters__filter-icon" src="/assets/img/icons/filter-icon.svg" width="14" height="14" alt="">

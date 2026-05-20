@@ -36,9 +36,10 @@
         <div class="swiper-scrollbar js-extended-tags-swiper-scrollbar"></div>
     </div>
     
-    <h2 class="section-title base-width">[[+catalogTitle]]</h2>
-    
-    [[$catalogFilterSection]]
+    <div class="catalog-filters-head base-width">
+        <h2 class="section-title catalog-filters-head__title">[[+catalogTitle]]</h2>
+        [[$catalogFilterSection]]
+    </div>
     
     <div class="catalog-section base-width js-catalog-section" data-parent-id=[[*id]] data-current-count=[[+currentCount]] data-total-count=[[+totalCount]]>
         <div class="js-ajax-insert wrapper">
